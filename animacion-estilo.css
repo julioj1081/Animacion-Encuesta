@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.animacion{
+    margin-top: 5rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#Persona-1{
+    animation: animacion 6s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Persona-2{
+    animation: animacion2 6s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#Persona-3{
+    animation: animacion3 8s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#check-1{
+    color: darkgreen;
+}
+@keyframes animacion{
+    0%{
+        transform: translateY(3%);
+    }
+    35%{
+        transform: translateY(8%);
+    }
+    85%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes animacion2{
+    0%{
+        transform: translateY(5%);
+    }
+    45%{
+        transform: translateY(7%);
+    }
+    75%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes animacion3{
+    0%{
+        transform: translateY(0%);
+    }
+    35%{
+        transform: translateY(5%);
+    }
+    85%{
+        transform: translateY(-3%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
